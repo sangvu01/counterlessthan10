@@ -1,10 +1,101 @@
-.css-playground{
+body {
+  margin: 0;
+}
+.right{
+  width: 200px;
+  height: 150px;
+  padding: 16px;
+  background: #000000;
+  border-radius: 12px;
+  color: white;
+}
+.Left{
+  width: 200px;
+  height: 150px;
+  padding: 16px;
+  background: #000000;
+  border-radius: 12px;
+  color: white;
+
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert{
+  width: 20px;
+  height: 20px;
+}
+
+.buttons{
   gap: 10px;
+  display: flex;
+}
+
+
+.All{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+
+.A{
+  /* style={{
+        borderRadius: "50px",
+        backgroundColor: "black",
+        color: "blue",
+        height: "100px",
+        width: "100px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }} */
+  border-radius: 50px;
+  background-color: black;
+  color: blue;
+  height: 100px;
+  width: 100px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .box{
   width: 80px;
@@ -18,40 +109,5 @@
 
 .box:hover{
   background-color: aquamarine;
-}
-
-body {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 80%; */
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-button{
-  width: 50px;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-
-.All{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 80%;
-}
-
-.AllButtons{
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
+  cursor: pointer;
 }
