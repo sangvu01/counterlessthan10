@@ -21,45 +21,45 @@ export default function App(){
     return newHistory.slice(-5);
   });
 }, [count]);
-
-
-
-
-
-
-
   return(
     <>
-    <div className="page">
-    <div className="count">
-      {count}
+    <div className="All">
+    <div className="counttext">
+      COUNT: {count}
     </div>
-    <div style={{
-      gap: "20px",
-      display: "flex"
+    <div className="AllButtons">
+    <button onClick={() => (count < 10) && setCount(count + 1)} style={{
+      backgroundColor: "#26f901",
+      color: "red",
     }}>
-    <button onClick={() => (count < 10) && setCount(count + 1)}> + </button>
-    <button onClick={() => (count > -10) && setCount(count - 1)}> - </button>
+       + 
+    </button>
+    <button onClick={() => (count > -10) && setCount(count - 1)} style={{
+      backgroundColor: "red",
+      color: "#26f901"
+    }}> - </button>
     </div>
-    <div style={{
-      height: "24px",
-    }}>{(count === 10)? "MAX" :
+    <div className="MinMax">{(count === 10)? "MAX" :
           (count === -10)? "MIN": " "}</div>
 
-    <div style={{
-      width: "100px",
-      borderBottom: "10px solid black",
-      borderTop: "10px solid red",
-      borderLeft: "10px solid blue",
-      borderRight: "10px solid purple"
-    }}>
+    <div className="history">
       HISTORY: </div>
-    <ul className="history">
+    <ul>
       {history.map((item,index) => (
         <li key={index}> {item}</li>
       ))}
     </ul>
     </div>
+
+
+      {/* CSS PLAYGROUND */}
+      <div className="css-playground">
+        <div className="box" onClick={() => {console.log("A")}}>A</div>
+        <div className="box">B</div>
+        <div className="box">C</div>
+      </div>
+
+
     </>
   )
 }
