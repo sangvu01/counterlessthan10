@@ -1,113 +1,44 @@
-body {
-  margin: 0;
-}
-.right{
-  width: 200px;
-  height: 150px;
-  padding: 16px;
-  background: #000000;
+.card {
+  width: 400px;
+  background: white;
   border-radius: 12px;
-  color: white;
-}
-.Left{
-  width: 200px;
-  height: 150px;
-  padding: 16px;
-  background: #000000;
-  border-radius: 12px;
-  color: white;
+  padding: 20px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 15px;
 }
 
-.alert{
-  width: 20px;
-  height: 20px;
-}
-
-.buttons{
-  gap: 10px;
-  display: flex;
-}
-
-
-.All{
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  align-items: flex-start;
-  padding-top: 50px;
-}
-
-button {
-  height: 50px;
-  width: 50px;
-  border-radius: 10px;
-}
-
-
-.A{
-  /* style={{
-        borderRadius: "50px",
-        backgroundColor: "black",
-        color: "blue",
-        height: "100px",
-        width: "100px",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }} */
-  border-radius: 50px;
-  background-color: black;
-  color: blue;
-  height: 100px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.box{
+/* ảnh góc trên trái */
+.img {
   width: 80px;
   height: 80px;
-  background-color: chartreuse;
+  border-radius: 50%;
+}
+
+/* name nằm riêng 1 dòng, đẩy sang phải */
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* dòng dưới căn giữa */
+.bottom {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  gap: 20px;
 }
 
-.box:hover{
-  background-color: aquamarine;
-  cursor: pointer;
+.job {
+  color: gray;
+}
+
+.GPTlink {
+  text-decoration: none;
+  background: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
 }
