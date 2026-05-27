@@ -1,44 +1,74 @@
-.card {
-  width: 400px;
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
+body{
+  margin: 0;
+}
 
+.page{
   display: flex;
+  flex: 1;
+  min-height: 100vh;
+  background-color: cyan;
   flex-direction: column;
-  gap: 15px;
-}
-
-/* ảnh góc trên trái */
-.img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-}
-
-/* name nằm riêng 1 dòng, đẩy sang phải */
-.name {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: right;
-}
-
-/* dòng dưới căn giữa */
-.bottom {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+}
+.card{
+  width:300px;
+  height:200px;
+
+  background:white;
+
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+
+  padding:20px;
+
+  border-radius:10px;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+
+  /* justify-self: center; */
+  align-items: center;
 }
 
-.job {
-  color: gray;
+.avatar img{
+  width:60px;
+  height:60px;
 }
 
-.GPTlink {
-  text-decoration: none;
-  background: #007bff;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 8px;
+.name,
+.job{
+  font-size:20px;
+}
+
+.link{
+  margin-top:auto;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:10px;
+
+  background:black;
+  color:white;
+
+  border-radius:8px;
+
+  text-decoration:none;
+}
+
+.row{
+  display:flex;
+  justify-content: space-between;
+  font-size: 25px;
+  width:100%;
+}
+
+.label{
+  font-weight:bold;
+}
+
+.value{
+  text-align:right;
 }

@@ -1,6 +1,6 @@
 // import { useState } from "react";
 // import { useEffect } from "react";
-import img from './assets/react.svg'
+import avatar from './assets/react.svg'
 import "./App.css";
 
 export default function App() {
@@ -10,35 +10,31 @@ export default function App() {
 
 
   return (
-    <div style={{
-      display: "flex",
-      flex: 1,
-      backgroundColor: "black",
-      minHeight: "100vh",
-      padding: 0,
-      justifyContent: "center",
-      alignItems: "center"
-    }}>
-        {/* CSS PLAYGROUND */}
-      <div className="css-playground">
-        {/* <div className="card">
-          <img src={img} className='img'/>
-          <div className='right'><div className='name'>Nguyen Van A</div>
-          <div className='remain'>
-          <div className='job'> FE Dev</div>
-          <a href='https://chatgpt.com/' className='GPTlink'>GPT</a>
-          </div></div>
+    <div className='page'>
+      <div className='card'>
+        <div className='avatar'>
+          <img src={avatar}/>
+        </div>
+        {/* <div className='name'>
+          Name: Chatgpt
+        </div>
+        <div className='job'>
+          Job: FE dev
         </div> */}
-        <div className="card">
-  <img src={img} className="img" />
+        <div className='row'>
+          <div className='label'>Name: </div>
+          <div className='value'>ChatGpt</div>
+        </div>
 
-  <div className="name">Nguyen Van A</div>
-
-  <div className="bottom">
-    <div className="job">FE Dev</div>
-    <a className="GPTlink">GPT</a>
-  </div>
-</div>
+        <div className='row'>
+          <div className='label'>Job: </div>
+          <div className='value'>FE Dev</div>
+        </div>
+        <div className='outer-link'>
+        <a href='https://chatgpt.com/' className='link'>
+          Follow GPT
+        </a>
+        </div>
       </div>
 
     </div>
